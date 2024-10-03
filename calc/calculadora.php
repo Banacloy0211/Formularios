@@ -14,7 +14,7 @@
     <title>Calculaora</title>
 </head>
 <body>
-    <table border:1px >
+    <table border=1px >
     <tr>
        <th>Valores</th>
        <th>$x y $y</th>
@@ -36,8 +36,6 @@
         <td>$divi</td>
     </tr>
     </table>
-    <?php
-        include('calculadora.view.php')
-    ?>
+    
 </body>
 </html>

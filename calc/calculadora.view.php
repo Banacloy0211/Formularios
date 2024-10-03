@@ -6,6 +6,6 @@
     <title>Calc view</title>
 </head>
 <body>
-    <a href="calculadora.php?x=12&y=4"></a>
+    <a href="calculadora.php?x=12&y=4">Enviar datos</a>
 </body>
 </html>
