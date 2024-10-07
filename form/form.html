@@ -11,34 +11,34 @@
         <form class="row" action="form.php" method="post">
             <div class="col-md-4">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre">
             </div>
             <div class="col-md-8">
                 <label for="apellido" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="apellido" placeholder="Dime tus apellidos">
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Dime tus apellidos">
             </div>
             <div class="col-md-6">
                 <label for="correo" class="form-label">Email</label>
-                <input type="email" class="form-control" id="correo">
+                <input type="email" class="form-control" name="correo" id="correo">
             </div>
             <div class="col-md-6">
                 <label for="url" class="form-label">URL</label>
-                <input type="url" class="form-control" id="url">
+                <input type="url" class="form-control" name="url" id="url">
             </div>
             <div class="col-md-6">
                 <label class="form-label">Sexo</label>
                 <div class="form-check">
                     <label for="M" class="form-check-label">Masculino</label>
-                    <input type="radio" class="form-check-input" name="sexo_masc" id="M">
+                    <input type="radio" class="form-check-input" name="sexo" id="M" value="M">
                 </div>
                 <div class="form-check">
                     <label for="F" class="form-check-label">Femenino</label>
-                    <input type="radio" class="form-check-input" name="sexo_feme" id="F">
+                    <input type="radio" class="form-check-input" name="sexo" id="F" value="F">
                 </div>
             </div>
             <div class="col-md-6">
                 <label for="familiares" class="form-label">Nº Integrantes domicilio</label>
-                <input type="range" class="form-range" min="0" max="8" id="familiares">
+                <input type="range" class="form-range" name="family" min="0" max="8" id="familiares">
             </div>
             <div class="col-md-6">
                 <label class="form-label" for="aficion">Aficiones</label>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="form-check">
                     <label for="Pt" class="form-check-label">Pintura</label>
-                    <input type="checkbox" name="aficion[]"name="pintura" id="Pt" value="pintura" class="form-check-input">
+                    <input type="checkbox" name="aficion[]" id="Pt" value="pintura" class="form-check-input">
                 </div>
                 <div class="form-check">
                     <label for="P" class="form-check-label">Programar</label>
@@ -73,7 +73,12 @@
                     <option value="tortilla">Tortilla de Papas</option>
                 </select>
             </div>
+            <button class="btn btn-info mt-3" type="submit">Enviar</button>
         </form>
     </div>
 </body>
 </html>
+
+
+
+
